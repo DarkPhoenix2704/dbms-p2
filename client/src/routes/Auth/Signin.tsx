@@ -4,9 +4,7 @@ import {
   FormControl,
   Input,
   Text,
-  Checkbox,
   Button,
-  Stack,
 } from "@chakra-ui/react";
 import React, { FormEvent } from "react";
 import { useNavigate } from "react-router-dom";
@@ -21,7 +19,6 @@ const Signin = () => {
   const [formError, setFormError] = React.useState<string>("");
   const [email, setEmail] = React.useState("");
   const [password, setPassword] = React.useState("");
-  const [isChecked, setIsChecked] = React.useState(false);
   const [loading, setLoading] = React.useState(false);
   const [error, setError] = React.useState<Errors>({
     email: false,
@@ -93,7 +90,7 @@ const Signin = () => {
           backdropFilter: "blur(10px)",
         }}
       >
-        <Heading textColor="white" fontFamily="Clash Display">
+        <Heading textColor="white" fontFamily="Poppins">
           Log In
         </Heading>
         <form>
@@ -116,7 +113,7 @@ const Signin = () => {
               fontSize="16px"
               backgroundColor="rgba(255,255,255,0.15)"
               textColor="white"
-              fontFamily="Clash Display"
+              fontFamily="Poppins"
               border="none"
               borderRadius="10px"
               onChange={(e) => setEmail(e.target.value)}
@@ -124,8 +121,8 @@ const Signin = () => {
                 textColor: "rgba(255, 255, 255, 0.25)",
               }}
               _focus={{
-                boxShadow: "0px 3px 8px rgba(120,119,198,0.3)",
-                border: "1px solid rgba(120,119,198,0.3)",
+                boxShadow: "0px 3px 8px rgba(56,255,56,0.1)",
+                border: "1px solid rgba(56,255,56,0.1)",
               }}
               _hover={{
                 backgroundColor: "rgba(255,255,255,0.25)",
@@ -135,7 +132,7 @@ const Signin = () => {
               <Text
                 marginBlockStart="8px"
                 textColor="red.500"
-                fontFamily="Clash Display"
+                fontFamily="Poppins"
               >
                 Please enter valid Email Address.
               </Text>
@@ -160,7 +157,7 @@ const Signin = () => {
               fontSize="16px"
               backgroundColor="rgba(255,255,255,0.15)"
               textColor="white"
-              fontFamily="Clash Display"
+              fontFamily="Poppins"
               border="none"
               borderRadius="10px"
               onChange={(e) => setPassword(e.target.value)}
@@ -168,8 +165,8 @@ const Signin = () => {
                 textColor: "rgba(255, 255, 255, 0.25)",
               }}
               _focus={{
-                boxShadow: "0px 3px 8px rgba(120,119,198,0.3)",
-                border: "1px solid rgba(120,119,198,0.3)",
+                boxShadow: "0px 3px 8px rgba(56,255,56,0.1)",
+                border: "1px solid rgba(56,255,56,0.1)",
               }}
               _hover={{
                 backgroundColor: "rgba(255,255,255,0.25)",
@@ -179,26 +176,18 @@ const Signin = () => {
               <Text
                 marginBlockStart="8px"
                 textColor="red.500"
-                fontFamily="Clash Display"
+                fontFamily="Poppins"
               >
                 Please enter a Valid Password.
               </Text>
             )}
           </FormControl>
-          <Checkbox
-            onClick={() => setIsChecked(!isChecked)}
-            marginBlockStart="12px"
-            textColor="white"
-            fontFamily="Clash Display"
-          >
-            Remember me
-          </Checkbox>
           <Text>
             {formError.length > 0 && (
               <Text
                 marginBlockStart="8px"
                 textColor="red.500"
-                fontFamily="Clash Display"
+                fontFamily="Poppins"
               >
                 {formError}
               </Text>
@@ -215,13 +204,13 @@ const Signin = () => {
             transition=".5s all ease"
             _hover={{
               boxShadow: "0px 8px 16px rgba(255, 255, 255, 0.15)",
-              backgroundColor: "rgba(120,119,198,1)",
+              backgroundColor: "rgba(56,255,56,0.1)",
               textColor: "white",
             }}
             _active={{
               textColor: "white",
-              background: "rgba(120,119,198,0.8)",
-              boxShadow: "0px 8px 16px rgba(120,119,198,0.3)",
+              background: "rgba(56,255,56,0.1)",
+              boxShadow: "0px 8px 16px rgba(56,255,56,0.1)",
               backdropFilter: "blur(25px)",
             }}
             onClick={login}
@@ -239,13 +228,13 @@ const Signin = () => {
             transition=".5s all ease"
             _hover={{
               boxShadow: "0px 8px 16px rgba(255, 255, 255, 0.15)",
-              backgroundColor: "rgba(120,119,198,1)",
+              backgroundColor: "rgba(56,255,56,0.1)",
               textColor: "white",
             }}
             _active={{
               textColor: "white",
-              background: "rgba(120,119,198,0.8)",
-              boxShadow: "0px 8px 16px rgba(120,119,198,0.3)",
+              background: "rgba(56,255,56,0.1)",
+              boxShadow: "0px 8px 16px rgba(56,255,56,0.1)",
               backdropFilter: "blur(25px)",
             }}
             onClick={createAccount}

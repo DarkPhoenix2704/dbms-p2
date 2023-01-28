@@ -111,7 +111,7 @@ const Signup = () => {
           backdropFilter: "blur(10px)",
         }}
       >
-        <Heading textColor="white" fontFamily="Clash Display">
+        <Heading textColor="white" fontFamily="Poppins">
           Create an Account
         </Heading>
         <form>
@@ -134,7 +134,7 @@ const Signup = () => {
               fontSize="16px"
               backgroundColor="rgba(255,255,255,0.15)"
               textColor="white"
-              fontFamily="Clash Display"
+              fontFamily="Poppins"
               border="none"
               borderRadius="10px"
               onChange={(e) => setName(e.target.value)}
@@ -142,8 +142,8 @@ const Signup = () => {
                 textColor: "rgba(255, 255, 255, 0.25)",
               }}
               _focus={{
-                boxShadow: "0px 3px 8px rgba(120,119,198,0.3)",
-                border: "1px solid rgba(120,119,198,0.3)",
+                boxShadow: "0px 3px 8px rgba(56,255,56,0.1)",
+                border: "1px solid rgba(56,255,56,0.1)",
               }}
               _hover={{
                 backgroundColor: "rgba(255,255,255,0.25)",
@@ -153,7 +153,7 @@ const Signup = () => {
               <Text
                 marginBlockStart="8px"
                 textColor="red.500"
-                fontFamily="Clash Display"
+                fontFamily="Poppins"
               >
                 Please enter your Full Name.
               </Text>
@@ -179,7 +179,7 @@ const Signup = () => {
               fontSize="16px"
               backgroundColor="rgba(255,255,255,0.15)"
               textColor="white"
-              fontFamily="Clash Display"
+              fontFamily="Poppins"
               border="none"
               borderRadius="10px"
               onChange={(e) => setEmail(e.target.value)}
@@ -187,8 +187,8 @@ const Signup = () => {
                 textColor: "rgba(255, 255, 255, 0.25)",
               }}
               _focus={{
-                boxShadow: "0px 3px 8px rgba(120,119,198,0.3)",
-                border: "1px solid rgba(120,119,198,0.3)",
+                boxShadow: "0px 3px 8px rgba(56,255,56,0.1)",
+                border: "1px solid rgba(56,255,56,0.1)",
               }}
               _hover={{
                 backgroundColor: "rgba(255,255,255,0.25)",
@@ -198,7 +198,7 @@ const Signup = () => {
               <Text
                 marginBlockStart="8px"
                 textColor="red.500"
-                fontFamily="Clash Display"
+                fontFamily="Poppins"
               >
                 Please enter valid Email Address.
               </Text>
@@ -223,7 +223,7 @@ const Signup = () => {
               fontSize="16px"
               backgroundColor="rgba(255,255,255,0.15)"
               textColor="white"
-              fontFamily="Clash Display"
+              fontFamily="Poppins"
               border="none"
               borderRadius="10px"
               onChange={(e) => setPassword(e.target.value)}
@@ -231,8 +231,8 @@ const Signup = () => {
                 textColor: "rgba(255, 255, 255, 0.25)",
               }}
               _focus={{
-                boxShadow: "0px 3px 8px rgba(120,119,198,0.3)",
-                border: "1px solid rgba(120,119,198,0.3)",
+                boxShadow: "0px 3px 8px rgba(56,255,56,0.1)",
+                border: "1px solid rgba(56,255,56,0.1)",
               }}
               _hover={{
                 backgroundColor: "rgba(255,255,255,0.25)",
@@ -242,7 +242,7 @@ const Signup = () => {
               <Text
                 marginBlockStart="8px"
                 textColor="red.500"
-                fontFamily="Clash Display"
+                fontFamily="Poppins"
               >
                 Please enter a Valid Password.
               </Text>
@@ -253,7 +253,7 @@ const Signup = () => {
             isRequired
             marginBlockStart="12px"
             textColor="white"
-            fontFamily="Clash Display"
+            fontFamily="Poppins"
           >
             I agree to the Terms of Service
           </Checkbox>
@@ -262,7 +262,7 @@ const Signup = () => {
               <Text
                 marginBlockStart="8px"
                 textColor="red.500"
-                fontFamily="Clash Display"
+                fontFamily="Poppins"
               >
                 {formError}
               </Text>
@@ -285,7 +285,7 @@ const Signup = () => {
             _active={{
               textColor: "white",
               background: "rgba(120,119,198,0.8)",
-              boxShadow: "0px 8px 16px rgba(120,119,198,0.3)",
+              boxShadow: "0px 8px 16px rgba(56,255,56,0.1)",
               backdropFilter: "blur(25px)",
             }}
             onClick={createAccount}
@@ -309,7 +309,7 @@ const Signup = () => {
             _active={{
               textColor: "white",
               background: "rgba(120,119,198,0.8)",
-              boxShadow: "0px 8px 16px rgba(120,119,198,0.3)",
+              boxShadow: "0px 8px 16px rgba(56,255,56,0.1)",
               backdropFilter: "blur(25px)",
             }}
             onClick={login}

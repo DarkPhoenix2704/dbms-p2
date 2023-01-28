@@ -26,8 +26,10 @@ const Home = () => {
   }, []);
   return (
     <BaseLayout>
-      <Heading textColor="white" fontFamily="Clash Display">
+      <Heading textColor="white" fontFamily="Poppins">
         Hi <span style={{ color: "red" }}> {user ? user!.name : "Hello"}</span>
+        <br />
+        Welcome to TODO App
       </Heading>
       <Button
         width="250px"
@@ -38,13 +40,13 @@ const Home = () => {
         transition=".5s all ease"
         _hover={{
           boxShadow: "0px 8px 16px rgba(255, 255, 255, 0.15)",
-          backgroundColor: "rgba(120,119,198,1)",
+          backgroundColor: "rgba(56,255,56,0.1)",
           textColor: "white",
         }}
         _active={{
           textColor: "white",
-          background: "rgba(120,119,198,0.8)",
-          boxShadow: "0px 8px 16px rgba(120,119,198,0.3)",
+          background: "rgba(56,255,56,0.1)",
+          boxShadow: "0px 8px 16px rgba(56,255,56,0.1)",
           backdropFilter: "blur(25px)",
         }}
         onClick={logout}

@@ -9,7 +9,7 @@ const BaseLayout = ({ children }: BaseLayoutProps) => {
         justifyContent="center"
         height="100vh"
         width="100vw"
-        background="radial-gradient(ellipse 80% 50% at 50% 50%,rgba(120,119,198,0.3),rgba(255,255,255,0))"
+        background="radial-gradient(ellipse 80% 50% at 50% 50%,rgba(56,255,56,0.1),rgba(255,255,255,0))"
       >
         {children}
       </VStack>

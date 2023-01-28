@@ -1,7 +1,6 @@
 import React, { StrictMode } from "react";
 import { createRoot } from "react-dom/client";
 import App from "./App";
-import "../assets/style/clashDisplay.css";
 
 const container = document.getElementById("root");
 const root = createRoot(container!);

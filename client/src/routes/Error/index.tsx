@@ -6,7 +6,7 @@ const Error = () => {
   const navigate = useNavigate();
   return (
     <BaseLayout>
-      <Heading fontFamily="Clash Display" textColor="white">
+      <Heading fontFamily="Poppins" textColor="white">
         404
       </Heading>
       <Button
@@ -25,7 +25,7 @@ const Error = () => {
         _active={{
           textColor: "white",
           background: "rgba(120,119,198,0.8)",
-          boxShadow: "0px 8px 16px rgba(120,119,198,0.3)",
+          boxShadow: "0px 8px 16px rgba(56,255,56,0.1)",
           backdropFilter: "blur(25px)",
         }}
         onClick={() => navigate("/")}
